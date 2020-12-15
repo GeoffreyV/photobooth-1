@@ -109,8 +109,10 @@ const photoBooth = (function () {
                 ioClient.on('photobooth-socket', function (data) {
                     switch (data) {
                         case 'start-picture':
-                            $('.resultInner').removeClass('show');
-                            api.thrill('photo');
+                            if (config.use_standAlone_picture) {
+                                $('.resultInner').removeClass('show');
+                                api.thrill('photo');
+                            }
                             break;
                         case 'start-collage':
                             if (config.use_collage) {

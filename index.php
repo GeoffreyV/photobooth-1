@@ -92,8 +92,9 @@ $imagelist = ($config['newest_first'] === true) ? array_reverse($images) : $imag
 					<a href="#" class="btn takeCollage"><i class="fa fa-th-large"></i> <span
 							data-i18n="takeCollage"></span></a>
 					<?php endif; ?>
-
-					<a href="#" class="btn takePic"><i class="fa fa-camera"></i> <span data-i18n="takePhoto"></span></a>
+                        <?php if ($config['use_standAlone_picture']): ?>
+                        <a href="#" class="btn takePic"><i class="fa fa-camera"></i> <span data-i18n="takePhoto"></span></a>
+                    <?php endif; ?>
 				<?php endif; ?>
 				<button hidden class="closeGallery"></button>
 				<button hidden class="triggerPic"></button>
@@ -167,8 +168,9 @@ $imagelist = ($config['newest_first'] === true) ? array_reverse($images) : $imag
 				<?php endif; ?>
 
 				<?php if (!$config['force_buzzer']): ?>
-					<a href="#" class="btn newpic"><i class="fa fa-camera"></i> <span data-i18n="newPhoto"></span></a>
-
+                    <?php if ($config['use_standAlone_picture']): ?>
+					    <a href="#" class="btn newpic"><i class="fa fa-camera"></i> <span data-i18n="newPhoto"></span></a>
+                    <?php endif; ?>
 					<?php if ($config['use_collage']): ?>
 					<a href="#" class="btn newcollage"><i class="fa fa-th-large"></i> <span
 							data-i18n="newCollage"></span></a>

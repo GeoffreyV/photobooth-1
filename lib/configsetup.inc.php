@@ -235,6 +235,11 @@ $configsetup = [
 			'name' => 'chroma_keying',
 			'value' => $config['chroma_keying']
 		],
+        'use_standAlone_picture' => [
+            'type' => 'checkbox',
+            'name' => 'use_standAlone_picture',
+            'value' => $config['use_standAlone_picture']
+        ],
 		'use_collage' => [
 			'type' => 'checkbox',
 			'name' => 'use_collage',

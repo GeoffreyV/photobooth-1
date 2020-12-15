@@ -369,6 +369,7 @@
   "toggle_fs_button": "Show button to toggle fullscreen",
   "update_available": "There is an update available.",
   "use_button": "Use Buzzer to take a Picture",
+  "use_standAlone_picture": "Allow standalone picture",
   "use_collage": "Allow photo collage",
   "use_download": "Allow downloads",
   "use_filter": "Allow image filter",
